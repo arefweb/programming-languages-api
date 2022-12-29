@@ -1,0 +1,53 @@
+{
+  "components": {
+    "getProgrammings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number"
+          },
+          "name": {
+            "type": "string"
+          },
+          "released_year": {
+            "type": "number"
+          },
+          "githut_rank": {
+            "type": "number"
+          },
+          "pypl_rank": {
+            "type": "number"
+          },
+          "tiobe_rank": {
+            "type": "number"
+          }
+        }
+      }
+    },
+    "postProgrammings": {
+      "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "released_year": {
+            "type": "number"
+          },
+          "githut_rank": {
+            "type": "number"
+          },
+          "pypl_rank": {
+            "type": "number"
+          },
+          "tiobe_rank": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "name", "released_year"
+        ]
+    }
+  }
+}
